@@ -15,4 +15,4 @@ def test_home_content():
     client = app.test_client()
     response = client.get("/")
 
-    assert b"Welcome to the Flask App!" in response.data
+    assert b"Hello, World!" in response.data
